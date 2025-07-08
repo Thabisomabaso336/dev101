@@ -1,0 +1,46 @@
+{
+	"name": "terminal-auto-rename",
+	"displayName": "Terminal Auto Rename",
+	"description": "Automatically renames the terminal with the current folder name.",
+	"version": "1.0.1",
+	"publisher": "batatop",
+	"icon": "images/icon.png",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/batatop/vscode-terminal-auto-rename.git"
+	},
+	"engines": {
+		"vscode": "^1.54.0"
+	},
+	"categories": [
+		"Other"
+	],
+	"activationEvents": [
+		"*"
+	],
+	"main": "./extension.js",
+	"scripts": {
+		"lint": "eslint .",
+		"pretest": "yarn run lint",
+		"test": "node ./test/runTest.js"
+	},
+	"devDependencies": {
+		"@types/glob": "^7.1.3",
+		"@types/mocha": "^8.2.2",
+		"@types/node": "14.x",
+		"@types/vscode": "^1.54.0",
+		"eslint": "^7.27.0",
+		"glob": "^7.1.7",
+		"mocha": "^8.4.0",
+		"typescript": "^4.3.2",
+		"vscode-test": "^1.5.2"
+	},
+	"dependencies": {
+		"pid-cwd": "^1.2.0"
+	},
+	"__metadata": {
+		"installedTimestamp": 1751620158081,
+		"targetPlatform": "undefined",
+		"size": 558775
+	}
+}
